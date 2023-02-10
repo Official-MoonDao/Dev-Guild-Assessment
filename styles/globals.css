@@ -1,0 +1,39 @@
+@font-face {
+  font-family: customFont1;
+  src: url("../public/fonts/goodtimesrg.otf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: customFont1;
+}
+
+h1 {
+  color: cornflowerblue;
+  font-size: 3vw;
+  margin: 2rem;
+}
+
+.pgContain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  min-height: 100vh;
+}
+
+.stars-bg {
+  background: url("/star-background.png") repeat,
+    linear-gradient(to right, rgb(14, 15, 15), rgb(25, 20, 58), rgb(13, 0, 31));
+}
+
+.galaxy-bg {
+  background: url("/galaxy.jpg") repeat;
+}
