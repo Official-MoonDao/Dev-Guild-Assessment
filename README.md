@@ -6,7 +6,7 @@ This tutorial will provide you with a base-line for what is expected from our de
 
 ---
 ## Setup
-There is no deadline so take your time.  Along with learning how we structure our code base we will also asses your skills by review the code you submit at the end.
+There is no deadline so take your time.  Along with learning how we structure our code base you will also be assesed on your skills when we review the code you submit at the end.
 
 To start the tutorial fork this repo, create a local repo and pull the 'main' branch
 
