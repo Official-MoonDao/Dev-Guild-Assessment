@@ -3,21 +3,42 @@
   src: url("../public/fonts/goodtimesrg.otf");
 }
 
+@font-face {
+  font-family: customFont2;
+  src: url("../public/fonts/ConsolaMono-DBA0.ttf");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html,
 body {
+  font-family: customFont1;
   padding: 0;
   margin: 0;
-  font-family: customFont1;
 }
 
 h1 {
   color: cornflowerblue;
   font-size: 3vw;
   margin: 2rem;
+  text-align: center;
+}
+
+p {
+  font-family: customFont2;
+  padding: 2%;
+  font-weight: 600;
+  color: gray;
+  backdrop-filter: blur(100px);
+  background: linear-gradient(
+    to right,
+    rgba(116, 128, 128, 0.253),
+    rgba(25, 20, 58, 0.336),
+    rgba(25, 4, 53, 0.301)
+  );
+  border-radius: 30px;
 }
 
 .pgContain {

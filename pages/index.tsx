@@ -1,12 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import MainCard from "@/components/MainCard";
-import TutorialStages from "@/components/TutorialStages";
+import MainCard from "@/components/Assessment/MainCard";
+import TutorialStages from "@/components/Assessment/AssessmentStages";
 import { useEffect, useState } from "react";
 
 export default function Tutorial() {
   const [memberProgress, setMemberProgress]: any = useState(null);
+  //check local storage for progress
   useEffect(() => {
     (async () => {
       let localData: any = localStorage.getItem("Tutorial");
@@ -19,7 +18,7 @@ export default function Tutorial() {
   return (
     <>
       <Head>
-        <title>MoonDAO Dev Guild Tutorial</title>
+        <title>MoonDAO Dev Guild Assessment</title>
         <meta
           name="description"
           content="A tutorial for new members of the MoonDAO Dev Guild"
