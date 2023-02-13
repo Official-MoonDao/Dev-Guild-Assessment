@@ -1,7 +1,7 @@
 # MoonDAO Dev Guild Tutorial
 ---
 ## Intro:
-*Welcome to MoonDAO! Thanks for taking the time to go through the on-boarding/application process 😀
+*Welcome to MoonDAO! Thanks for taking the time to go through the on-boarding/application process* 😀
 ---
 ## Setup
 There is no deadline so take your time.  Along with learning how we structure our code base you will also be assesed on your skills when we review the code you submit at the end.
