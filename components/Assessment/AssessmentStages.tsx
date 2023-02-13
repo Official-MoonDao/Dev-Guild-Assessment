@@ -85,7 +85,7 @@ export default function TutorialStages({ progress }: any) {
           <Instructions
             text={`2) Create a react component with a button that links to the main MoonDAO website.  Use this link for your button => https://moondao.com`}
           />
-          <Instructions text={`5) Save the file and refresh the page`} />
+          <Instructions text={`3) Save the file and refresh the page`} />
           {Stage1 && (
             <Stage1 /> //ignore error
           )}
