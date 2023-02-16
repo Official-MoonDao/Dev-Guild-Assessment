@@ -1,6 +1,6 @@
 import Head from "next/head";
-import MainCard from "@/components/Assessment/MainCard";
-import TutorialStages from "@/components/Assessment/AssessmentStages";
+import MainCard from "@/components/assessment/MainCard";
+import TutorialStages from "@/components/assessment/AssessmentStages";
 import { useEffect, useState } from "react";
 
 export default function Tutorial() {

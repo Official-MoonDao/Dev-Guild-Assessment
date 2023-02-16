@@ -6,13 +6,15 @@ IT WILL COUNT AGAINST YOUR FINAL ASSESMENT
 
 import { useEffect, useState } from "react";
 import AdvanceButton from "./AdvanceButton";
-import Stage1 from "../CustomComponents/Stage1";
-import Stage2 from "../CustomComponents/Stage2";
+import Stage1 from "../customComponents/Stage1";
+import Stage2 from "../customComponents/Stage2";
 import bio from "../../BIO.md";
 import Link from "next/link";
+import { getHolders } from "@/lib/vmooney-token";
 
 export default function TutorialStages({ progress }: any) {
   const [currentStage, setCurrentStage]: any = useState(progress);
+  const [holderData, setHolderData]: any = useState([]);
   const [enabled, setEnabled] = useState(false);
   useEffect(() => {
     //track progress w/ local storage
@@ -25,11 +27,14 @@ export default function TutorialStages({ progress }: any) {
     //verify stage completion
     if (
       (currentStage === 1 && !Stage1()) ||
-      (currentStage === 2 && !Stage2()) ||
+      (currentStage === 2 && !Stage2([])) ||
       (currentStage === 3 && !bio)
     )
       setEnabled(false);
     else setEnabled(true);
+
+    (async () => await setHolderData(await getHolders()))();
+    console.log(holderData);
   }, [currentStage, Stage1, Stage2, localStorage]);
 
   //Dynamic Stage Container
@@ -86,9 +91,7 @@ export default function TutorialStages({ progress }: any) {
             text={`2) Create a react component with a button that links to the main MoonDAO website.  Use this link for your button => https://moondao.com`}
           />
           <Instructions text={`3) Save the file and refresh the page`} />
-          {Stage1 && (
-            <Stage1 /> //ignore error
-          )}
+          {enabled && <Stage1 />}
         </>
       )}
       {currentStage === 2 && (
@@ -96,21 +99,13 @@ export default function TutorialStages({ progress }: any) {
           <h1>Stage 2: Display vMooney Data</h1>
           <p className="text-[grey] italic">{`To make data more accessible we've created a subgraph using The Graph Protocol.`}</p>
           <Instructions
-            text={`1) Find the 'lib' folder and open the 'vmooney-token.ts' file.`}
+            text={`1) Find the 'Stage2.tsx' file inside of the 'CustomComponents' folder. The 'holdersData' prop contains all of the data for vMooney holders.`}
           />
           <Instructions
-            text={`2) Use the 'getHolders' function in the 'vmooney-token.ts' file to fetch data for vMooney holders. This function returns an array.`}
+            text={`3) Create a react component displaying data for vMooney or the holders. Use your imagination. It can be something as simple as displaying the number of holders or you can try something more complex like calculating the total amount of locked mooney.`}
           />
-          <Instructions
-            text={`3) Find the 'Stage2.tsx' file inside of the 'CustomComponents' folder.`}
-          />
-          <Instructions
-            text={`4) Create a react component displaying data for vMooney or the holders. Use your imagination. It can be something as simple as displaying the number of holders or you can try something more complex like calculating the total amount of locked mooney.`}
-          />
-          <Instructions text={`5) Save the file and refresh the page`} />
-          {Stage2 && (
-            <Stage2 /> //ignore error
-          )}
+          <Instructions text={`4) Save the file and refresh the page`} />
+          {enabled && <Stage2 holderData={holderData} />}
         </>
       )}
       {currentStage === 3 && (

@@ -1,3 +1,3 @@
-export default function Stage2() {
+export default function Stage2({ holderData }: any) {
   return false;
 }

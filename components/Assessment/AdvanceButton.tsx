@@ -5,7 +5,7 @@ IT WILL COUNT AGAINST YOUR FINAL ASSESMENT
 */
 
 import { useEffect, useState } from "react";
-import CustomComponent from "../CustomComponents/Stage1";
+import CustomComponent from "../customComponents/Stage1";
 
 export default function AdvanceButton({
   setStage,
