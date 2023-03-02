@@ -1,25 +1,41 @@
-# Best-Practices & Styling
+# Dev-Guild Guide
 ---
 ## Table of Contents
 
-1. [**VSCode**](#vscode)
+[**Welcome**](#welcome)
+[**VSCode**](#vscode)
     - [**Basics**](#vscode-basics)
     - [**Extensions**](#vscode-extensions)
     - [**Shortcuts**](#vscode-shortcuts)
-2. [**Notes**](#notes)
-3. [**Clean & Dry**](#clean-&-dry)
+[**Notes**](#notes)
+[**Best Practices & Styling**](#best-practices--styling)
     - [**Reusable components & functions**](#create-reusable-components-and-functions)
     - [**Formatting**](#formatting)
     - [**Follow README**](#follow-readme)
-4. [**README**](#readme)
+[**README**](#readme)
     - [**Formatting**](#readme-formatting)
-5. [**GitHub**](#github)
+[**GitHub**](#github)
     - [**Create an account**](#create-an-account)
     - [**Create a remote repository](#create-a-remote-repository)
     - [**Fork a repository**](#fork-a-repository)
     - [**Create a local repository**](#create-a-local-repository)
     - [**Pull**](#pull)
     - [**Push**](#push)
+---
+## Welcome!
+***Welcome to MoonDAO's Dev-Guild!***
+Are you looking to contribute at MoonDAO? You have come to the right place!
+
+**Abstract:** The primary goal of the Developer Guild will be to lay a foundation for the dev guild will also serve as a pool of technical contributors MoonDAO projects can outsource work to or bring on to their teams. The guild will administer bounties and help form projects aligned with the objectives of the guild.
+
+**Motivation:** Day-to-day processes in DAOs are slow and require a lot of overhead work. The Developer Guild’s goal is to improve the efficiency of these processes to increase the speed of work done inside the DAO. After all, we only have about 7 years to get to the moon.
+
+**Roles:**
+1. Dev Guild Follower (L0) - This role is for people that are interested in the developer guild, and can permissionlessly assign themselves this role to keep updated with guild progress. This role does not mean that they are a member of the guild, but would like to see what is going on.
+2. Dev Guild Newbie (L1) - This role is for people that are accepted into the guild with the potential to contribute, but still need to be onboarded to the guild. This role will be able to apply for bounties listed by the dev guild. Once deemed fit, Dev Guild Newbies can be promoted to Agents by Stewards.
+3. Dev Guild Agent (L2) - This role is reserved for contributors who have contributed and know their way around the codebase and workflows in MoonDAO. Those with this role will be able to directly claim bounties listed by the guild.
+4. Dev Guild Steward (L3) - Leaders of the guild to ensure consistent and reliable operations of the guild. Stewards can review pull requests.
+
 ---
 ## VSCode
 ***VSCode is a lightweight source code editor which is available for Windows, macOS, and Linux. => [Download](https://code.visualstudio.com/download)***
@@ -68,7 +84,7 @@
 If you create a complex function or component add notes to make your code more readable. Notes are not required for everything, use your best judgment.
 
 ---
-## Clean & Dry
+## Best-Practices & Styling
 ***Ensure that your code is clear, understandable, and maintainable. Remember the “DRY” rule (Do not repeat yourself).***
 
 - ### Create reusable components and functions
