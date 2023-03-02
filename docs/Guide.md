@@ -15,6 +15,11 @@
     - [**Formatting**](#readme-formatting)
 5. [**GitHub**](#github)
     - [**Create an account**](#create-an-account)
+    - [**Create a remote repository](#create-a-remote-repository)
+    - [**Fork a repository**](#fork-a-repository)
+    - [**Create a local repository**](#create-a-local-repository)
+    - [**Pull**](#pull)
+    - [**Push**](#push)
 ---
 ## VSCode
 ***VSCode is a lightweight source code editor which is available for Windows, macOS, and Linux. => [Download](https://code.visualstudio.com/download)***
